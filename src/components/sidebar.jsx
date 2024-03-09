@@ -76,15 +76,21 @@ export default function Sidebar() {
               >
                 <ul>
                   <li className={manu === "index" || "" ? "active" : ""}>
-                    <Link to="/index">Analytics</Link>
+                    <Link to="/index">Youtube Analytics</Link>
                   </li>
-                  <li className={manu === "index-crypto" ? "active" : ""}>
-                    <Link to="/index-crypto">
-                      Cryptocurrency{" "}
-                      <span className="bg-yellow-500 inline-block text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">
+                  <li className={manu === "index-instagram" ? "active" : ""}>
+                    <Link to="/index-instagram">
+                      Instagram Analytics{" "}
+                      {/* <span className="bg-yellow-500 inline-block text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">
                         New
-                      </span>
+                      </span> */}
                     </Link>
+                  </li>
+                  <li className={manu === "index-twitter" || "" ? "active" : ""}>
+                    <Link to="/index-twitter">Twitter Analytics</Link>
+                  </li>
+                  <li className={manu === "index" || "" ? "active" : ""}>
+                    <Link to="/index">Linkedin Analytics</Link>
                   </li>
                 </ul>
               </div>
@@ -103,7 +109,7 @@ export default function Sidebar() {
                   : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "index-item" ? "" : "index-item");
@@ -111,7 +117,7 @@ export default function Sidebar() {
               >
                 <PiBrowsersBold className=" me-3 icon " />
                 Layouts
-              </Link>
+              </Link> */}
               <div
                 className={`sidebar-submenu ${
                   [
@@ -155,7 +161,7 @@ export default function Sidebar() {
                 ["chat", "email", "calendar"].includes(manu) ? "active" : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "app-item" ? "" : "app-item");
@@ -163,8 +169,8 @@ export default function Sidebar() {
               >
                 <AiOutlineAppstore className=" me-3 icon " />
                 Apps
-              </Link>
-              <div
+              </Link> */}
+              {/* <div
                 className={`sidebar-submenu ${
                   ["chat", "email", "calendar", "app-item"].includes(subManu)
                     ? "block"
@@ -182,7 +188,7 @@ export default function Sidebar() {
                     <Link to="/calendar">Calendar</Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </li>
 
             <li
@@ -227,12 +233,12 @@ export default function Sidebar() {
                   <li className={manu === "profile" ? "active" : ""}>
                     <Link to="/profile">Profile</Link>
                   </li>
-                  <li className={manu === "profile-billing" ? "active" : ""}>
+                  {/* <li className={manu === "profile-billing" ? "active" : ""}>
                     <Link to="/profile-billing">Billing Info</Link>
                   </li>
                   <li className={manu === "profile-payment" ? "active" : ""}>
                     <Link to="/profile-payment">Payment</Link>
-                  </li>
+                  </li> */}
                   <li className={manu === "profile-social" ? "active" : ""}>
                     <Link to="/profile-social">Social Profile</Link>
                   </li>
@@ -253,7 +259,7 @@ export default function Sidebar() {
                 ["blog", "blog-detail"].includes(manu) ? "active" : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "blog-item" ? "" : "blog-item");
@@ -261,7 +267,7 @@ export default function Sidebar() {
               >
                 <TbBrandBlogger className=" me-3 icon " />
                 Blog
-              </Link>
+              </Link> */}
               <div
                 className={`sidebar-submenu ${
                   ["blog", "blog-detail", "blog-item"].includes(subManu)
@@ -269,14 +275,14 @@ export default function Sidebar() {
                     : ""
                 }`}
               >
-                <ul>
+                {/* <ul>
                   <li className={manu === "blog" ? "active" : ""}>
                     <Link to="/blog">Blogs</Link>
                   </li>
                   <li className={manu === "blog-detail" ? "active" : ""}>
                     <Link to="/blog-detail">Blog Detail</Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </li>
 
@@ -289,7 +295,7 @@ export default function Sidebar() {
                   : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "shop-item" ? "" : "shop-item");
@@ -297,7 +303,7 @@ export default function Sidebar() {
               >
                 <AiOutlineShoppingCart className="me-3 icon" />
                 E-Commerce
-              </Link>
+              </Link> */}
               <div
                 className={`sidebar-submenu ${
                   [
@@ -311,7 +317,7 @@ export default function Sidebar() {
                     : ""
                 }`}
               >
-                <ul>
+                {/* <ul>
                   <li className={manu === "shop" ? "active" : ""}>
                     <Link to="/shop">Shop</Link>
                   </li>
@@ -324,7 +330,7 @@ export default function Sidebar() {
                   <li className={manu === "checkout" ? "active" : ""}>
                     <Link to="/checkout">Checkout</Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </li>
 
@@ -333,7 +339,7 @@ export default function Sidebar() {
                 ["gallery-one", "gallery-two"].includes(manu) ? "active" : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "gallery-item" ? "" : "gallery-item");
@@ -341,7 +347,7 @@ export default function Sidebar() {
               >
                 <AiOutlineCamera className="me-3 icon" />
                 Gallery
-              </Link>
+              </Link> */}
               <div
                 className={`sidebar-submenu ${
                   ["gallery-one", "gallery-two", "gallery-item"].includes(
@@ -351,14 +357,14 @@ export default function Sidebar() {
                     : ""
                 }`}
               >
-                <ul>
+                {/* <ul>
                   <li className={manu === "gallery-one" ? "active" : ""}>
                     <Link to="/gallery-one">Gallary One</Link>
                   </li>
                   <li className={manu === "gallery-two" ? "active" : ""}>
                     <Link to="/gallery-two">Gallery Two</Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </li>
 
@@ -376,7 +382,7 @@ export default function Sidebar() {
                   : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "page-item" ? "" : "page-item");
@@ -384,7 +390,7 @@ export default function Sidebar() {
               >
                 <AiOutlineFile className="me-3 icon" />
                 Pages
-              </Link>
+              </Link> */}
               <div
                 className={`sidebar-submenu ${
                   [
@@ -400,7 +406,7 @@ export default function Sidebar() {
                     : ""
                 }`}
               >
-                <ul>
+                {/* <ul>
                   <li className={manu === "starter" ? "active" : ""}>
                     <Link to="/starter">Starter</Link>
                   </li>
@@ -419,15 +425,15 @@ export default function Sidebar() {
                   <li className={manu === "terms" ? "active" : ""}>
                     <Link to="/terms">Term & Condition</Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </li>
 
             <li className={manu === "ui-components" ? "active" : ""}>
-              <Link to="/ui-components">
+              {/* <Link to="/ui-components">
                 <AiOutlineLineChart className=" me-3 icon " />
                 UI Components
-              </Link>
+              </Link> */}
             </li>
 
             <li
@@ -442,7 +448,7 @@ export default function Sidebar() {
                   : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "mail-item" ? "" : "mail-item");
@@ -450,7 +456,7 @@ export default function Sidebar() {
               >
                 <MdOutlineEmail className=" me-3 icon " />
                 Email Template
-              </Link>
+              </Link> */}
               <div
                 className={`sidebar-submenu ${
                   [
@@ -464,7 +470,7 @@ export default function Sidebar() {
                     : ""
                 }`}
               >
-                <ul>
+                {/* <ul>
                   <li className={manu === "email-confirmation" ? "active" : ""}>
                     <Link to="/email-confirmation">Confirmation</Link>
                   </li>
@@ -479,7 +485,7 @@ export default function Sidebar() {
                   <li className={manu === "email-invoices" ? "active" : ""}>
                     <Link to="/email-invoices">Invoice</Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </li>
 
@@ -488,7 +494,7 @@ export default function Sidebar() {
                 ["invoice-list", "invoice"].includes(manu) ? "active" : ""
               }`}
             >
-              <Link
+              {/* <Link
                 to="#"
                 onClick={(e) => {
                   setSubManu(subManu === "invoice-item" ? "" : "invoice-item");
@@ -496,7 +502,7 @@ export default function Sidebar() {
               >
                 <LiaFileInvoiceDollarSolid className=" me-3 icon " />
                 Invoice
-              </Link>
+              </Link> */}
               <div
                 className={`sidebar-submenu ${
                   ["invoice-list", "invoice", "invoice-item"].includes(subManu)
@@ -504,14 +510,14 @@ export default function Sidebar() {
                     : ""
                 }`}
               >
-                <ul>
+                {/* <ul>
                   <li className={manu === "invoice-list" ? "active" : ""}>
                     <Link to="/invoice-list">Invoice List</Link>
                   </li>
                   <li className={manu === "invoice" ? "active" : ""}>
                     <Link to="/invoice">Invoice Preview</Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </li>
 

@@ -200,7 +200,7 @@ const navigate= useNavigate()
                       </div>
 
                       <div className="text-lg font-semibold mt-6 ms-44">
-                        - Brandscape
+                        - Analytics Dashboard
                       </div>
                     </div>
                   </div>

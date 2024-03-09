@@ -189,7 +189,7 @@ export default function AuthLogin() {
                       </div>
 
                       <div className="text-lg font-semibold mt-6 ms-44">
-                        - Brandscape
+                        - Analytics Dashboard
                       </div>
                     </div>
                     {/* <p className="text-slate-400 max-w-xl mx-auto">

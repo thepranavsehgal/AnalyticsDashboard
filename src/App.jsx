@@ -119,6 +119,7 @@ function App() {
               /> */}
               <Route path="/superDashboard" element={<Team />} />
               <Route path="/aiDashboard" element={<AiDashboard/>} />
+              <Route path="/index" element={<Index />} />
             </Routes>
             <Footer />
           </main>
