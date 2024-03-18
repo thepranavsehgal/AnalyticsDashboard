@@ -24,6 +24,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import UiComponents from "./pages/ui-components";
 import AiDashboard from "./pages/Team/AiDashboard"
+import FileUploadPage from "./VideoEditor/UploadProjects";
+import EditorPageHome from "./VideoEditor/EditorPageHome";
 
 // export default function App() {
 //   return (
@@ -63,6 +65,8 @@ function App() {
       location.pathname === "/comingsoon" ||
       location.pathname === "/maintenance" ||
       location.pathname === "/error" ||
+      location.pathname === "/videoEditorPage" ||
+      location.pathname === "/editorpage" ||
       location.pathname === "/thankyou" ? (
         <Routes>
           <Route path="/auth-login" element={<AuthLogin />} />
@@ -83,7 +87,10 @@ function App() {
         <Route path="/error" element={ <PageError/>}/>
         <Route path="/error" element={ <PageError/>}/>
         <Route path="/thankyou" element={ <PageThankyou/>}/> */}
+        <Route path="/videoEditorPage" element= {<FileUploadPage/>}/>
+        <Route path="/editorpage" element= {<EditorPageHome/>}/>
         </Routes>
+        
       ) : (
         <div className={`page-wrapper  ${toggle ? "toggled" : ""}`}>
           {location.pathname === "/index-sidebar-light" ? (
